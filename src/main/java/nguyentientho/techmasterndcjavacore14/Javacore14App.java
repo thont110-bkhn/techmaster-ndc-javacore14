@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TechmasterNdcJavacore14Application {
+public class Javacore14App {
 
     public static void main(String[] args) {
-        SpringApplication.run(TechmasterNdcJavacore14Application.class, args);
+        SpringApplication.run(Javacore14App.class, args);
     }
 
 }
