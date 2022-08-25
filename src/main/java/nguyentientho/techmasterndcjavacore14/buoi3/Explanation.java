@@ -11,8 +11,11 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Explanation {
-    public static void main(String[] args) {
+    public static void main0(String[] args) {
         bai3();
+    }
+
+    public static void main(String[] args) {
     }
 
     public static void main1(String[] args) {
@@ -307,10 +310,109 @@ public class Explanation {
     }
 //    public static void bai17() {}
 //    public static void bai18() {}
-//    public static void bai19() {}
-//    public static void bai20() {}
-//    public static void bai21() {}
-//    public static void bai22() {}
+
+    /**
+     *  Viết chương trình Java để tạo một chuỗi mới lặp lại mỗi ký tự hai lần từ một chuỗi đã cho
+     *  Chuỗi đã cho là: chào mừng
+     * Chuỗi mới là: wweellccoommee
+     */
+    public static void bai19() {
+    {
+        int l = stng.length();
+        String newstring = "";
+        for (int i = 0; i < l; i++)
+        {
+            newstring += stng.substring(i,i+1) + stng.substring(i, i+1);
+        }
+        return newstring;
+    }
+
+    public static void main (String[] args)
+    {
+        Main m= new Main();
+        String str1 =  "welcome";
+        System.out.println("The given string is: "+str1);
+        System.out.println("The new string is: "+m.repeatAllTwice(str1));
+    }
+}
+    }
+
+
+    /** Bài 20
+     * Viết một chương trình Java để loại bỏ các ký tự trùng lặp trong 1 chuỗi
+     * Chuỗi đã cho là: techmaster
+     * Sau khi loại bỏ các ký tự trùng lặp, chuỗi mới là: techmasr
+     */
+    public static void bai20() {
+        String str1 = "w3resource";
+        System.out.println("The given string is: " + str1);
+        System.out.println("After removing duplicates characters the new string is: " + removeDuplicateChars(str1));
+    }
+    private static String removeDuplicateChars(String sourceStr) {
+        char[] arr1 = sourceStr.toCharArray();
+        String targetStr = "";
+        for (char value: arr1) {
+            if (targetStr.indexOf(value) == -1) {
+                targetStr += value;
+            }
+        }
+        return targetStr;
+    }
+
+    /** Bài 21
+     * Viết chương trình java để tìm ký tự chỉ xuất hiện 1 lần trong chuỗi
+     * Chuỗi đã cho là: gibblegabbler
+     * Ký tự xuất hiện 1 lần trong Chuỗi là: i
+     */
+    public static void bai21() {
+        String str1 = "gibblegabbler";
+        System.out.println("The given string is: " + str1);
+        for (int i = 0; i < str1.length(); i++) {
+            boolean unique = true;
+            for (int j = 0; j < str1.length(); j++) {
+                if (i != j && str1.charAt(i) == str1.charAt(j)) {
+                    unique = false;
+                    break;
+                }
+            }
+            if (unique) {
+                System.out.println("The first non repeated character in String is: " + str1.charAt(i));
+                break;
+            }
+        }
+    }
+
+    /** Bài 22
+     * Viết chương trình Java để tìm ký tự xuất hiện nhiều nhất trong một chuỗi
+     * Chuỗi đã cho là: test string
+     * ký tự xuất hiện nhiều nhất trong chuỗi là: t
+     */
+    public static void bai22() {
+        static final int N = 256;
+        static char MaxOccuringChar(String str1) {
+            int ctr[] = new int[N];
+            int l = str1.length();
+            for (int i = 0; i < l; i++)
+                ctr[str1.charAt(i)]++;
+            int max = -1;
+            char result = ' ';
+
+            for (int i = 0; i < l; i++) {
+                if (max < ctr[str1.charAt(i)]) {
+                    max = ctr[str1.charAt(i)];
+                    result = str1.charAt(i);
+                }
+            }
+
+            return result;
+        }
+        public static void main(String[] args) {
+            String str1 = "test string";
+            System.out.println("The given string is: " + str1);
+            System.out.println("Max occurring character in the given string is: " + MaxOccuringChar(str1));
+        }
+    }
+
 //    public static void bai23() {}
 //    public static void bai24() {}
 //    public static void bai25() {}
