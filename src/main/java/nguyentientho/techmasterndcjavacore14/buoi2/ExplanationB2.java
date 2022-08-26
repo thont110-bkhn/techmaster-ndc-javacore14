@@ -2,7 +2,7 @@ package nguyentientho.techmasterndcjavacore14.buoi2;
 
 import java.util.Scanner;
 
-public class Lecture2 {
+public class ExplanationB2 {
 
     public static void main(String[] args) {
 //        tamGiacVuong3();

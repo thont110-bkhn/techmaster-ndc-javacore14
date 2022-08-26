@@ -1,10 +1,8 @@
 package nguyentientho.techmasterndcjavacore14.buoi1;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Scanner;
 
-public class Explanation {
+public class ExplanationB1 {
 
     public static void main(String[] args) {
         bai10();

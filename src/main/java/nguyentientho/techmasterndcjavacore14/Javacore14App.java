@@ -2,8 +2,22 @@ package nguyentientho.techmasterndcjavacore14;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 @SpringBootApplication
 public class Javacore14App {
+
+    public static void main(String[] args) {
+        String chuoi;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Nhập Chuỗi : ");
+        chuoi= scanner.nextLine();
+        StringBuilder sb = new StringBuilder(chuoi);
+        sb.deleteCharAt(0);
+        System.out.println(sb.toString());
+    }
 
     public static void main0(String[] args) {
         for (var i = 1; i <= 100; i++) {
@@ -95,19 +109,52 @@ public class Javacore14App {
             }
             System.out.println();
         }
+
     }
 
-    public static void main(String[] args) {
-        int count =0;
-        for(int i = 1; i<=5;i++){
-             count+=i;
-            for(int j=count -i+1; j<=count;j++) {
-                System.out.printf("%2d",j);
-                System.out.print(" ");
+    public static void lapLaiKiTu(String ipString) {
+        char[] chars = new char[2*ipString.length()];
+        for (int i=0; i<2*ipString.length(); i+=2) {
+        chars[i] = ipString.charAt(i/2);
+        }
+        for (int i=0; i<2*ipString.length(); i+=2){
+            chars[i+1] = ipString.charAt(i/2);
+        }
+        System.out.println(String.valueOf(chars));
 
+    }
+
+    public static void bokitulaplai(String str){
+        for (int i = 0; i<str.length(); i++) {
+            int count = 0;
+            for (int j = 0; j<i; j++) {
+                if (str.charAt(j) == str.charAt(i)) count++;
             }
-            System.out.println();
+            if (count == 0) System.out.print(str.charAt(i));
         }
     }
 
+    public static void ex4(String string) {
+        int max=0, result=0;
+        int n = string.length();
+        int[] count = new int[n];
+        for(int i = 0; i<n;i++)
+            count[i]=0;
+
+        int counttmp=0;
+        for (int i = 0;i<n;i++){
+            for (int j = i+1;j<n;j++) {
+                if (string.charAt(i) == string.charAt(j))
+                    count[i]++;
+                if(counttmp<count[i]){
+                    counttmp=count[i];
+                }
+            }
+        }
+        for(int i=0;i<n;i++){
+            if(count[i]==counttmp){
+                System.out.println(string.charAt(i)+"  ");
+            }
+        }
+    }
 }
