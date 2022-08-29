@@ -3,6 +3,9 @@ package nguyentientho.techmasterndcjavacore14.buoi2;
 import java.util.Scanner;
 
 public class Lecture2 {
+    public static void main(String[] args) {
+        kimTuThap();
+    }
 
     /**
      * Viết ct in ra màn hình tam giác
@@ -74,7 +77,7 @@ public class Lecture2 {
         System.out.print("Input number of rows : ");
         Scanner in = new Scanner(System.in);
         n = in.nextInt();
-        s = n + 4 - 1;
+        s = n - 1;
         for (i = 1; i <= n; i++) {
             for (x = s; x != 0; x--) {
                 System.out.print(" ");
