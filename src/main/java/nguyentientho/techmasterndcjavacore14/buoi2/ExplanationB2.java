@@ -2,8 +2,10 @@ package nguyentientho.techmasterndcjavacore14.buoi2;
 
 import java.util.Scanner;
 
-public class Lecture2 {
+public class ExplanationB2 {
+
     public static void main(String[] args) {
+//        tamGiacVuong3();
         kimTuThap();
     }
 
@@ -21,9 +23,8 @@ public class Lecture2 {
         Scanner in = new Scanner(System.in);
         n = in.nextInt();
         for (i = 1; i <= n; i++) {
-            for (j = 1; j <= i; j++)
-                System.out.print(j);
-
+            for (j = 1; j <= n; j++)
+                System.out.print("*" + " ");
             System.out.println("");
         }
     }
@@ -55,13 +56,13 @@ public class Lecture2 {
      * 7 8 9 10
      */
     public static void tamGiacVuong3() {
-        int i, j, n, k = 1;
+        int i, j, n, k = 0;
         System.out.print("Input number of rows : ");
         Scanner in = new Scanner(System.in);
         n = in.nextInt();
         for (i = 1; i <= n; i++) {
             for (j = 1; j <= i; j++)
-                System.out.print(k++);
+                System.out.print(++k);
             System.out.println("");
         }
     }
@@ -77,10 +78,10 @@ public class Lecture2 {
         System.out.print("Input number of rows : ");
         Scanner in = new Scanner(System.in);
         n = in.nextInt();
-        s = n - 1;
+        s = n;
         for (i = 1; i <= n; i++) {
-            for (x = s; x != 0; x--) {
-                System.out.print(" ");
+            for (x = s; x > 0; x--) {
+                System.out.print("*");
             }
             for (j = 1; j <= i; j++) {
                 System.out.print(i + " ");

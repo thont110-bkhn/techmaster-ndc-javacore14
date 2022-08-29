@@ -2,10 +2,10 @@ package nguyentientho.techmasterndcjavacore14.buoi1;
 
 import java.util.Scanner;
 
-public class Explanation {
+public class ExplanationB1 {
 
     public static void main(String[] args) {
-        bai9();
+        bai10();
     }
 
     /** [Bài 1]
@@ -33,14 +33,26 @@ public class Explanation {
      * Viết chương trình lấy 1 số nguyên bất kỳ trong khoảng từ 0 đến 1000 và tính tổng các chữ số của nó?
      * VD: Tổng các chữ số của số 1000 = 1;
      */
-    public static void bai4() {}
+    public static void bai4() {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Part 4: Insert the number:");
+        int rd = input.nextInt();
+        int rds = 0;
+        while (rd > 0) {
+            int digit = rd % 10;
+            rds = rds + digit;
+            rd = rd / 10;
+        }
+        System.out.println("Sum of the Digits of the number generated: " + rds);
+
+    }
 
     /** [Bài 5]
      * Viết chương trình Java để chấp nhận hai số nguyên và trả về true nếu một trong hai số nguyên là 10 hoặc
      * nếu tổng hoặc hiệu của chúng là 10.
      */
     public static boolean bai5(int p, int q) {
-        return (p == 15 || q ==15 || (p + q) == 15 || Math.abs(p - q) == 15);
+        return (p == 10 || q == 10 || (p + q) == 10 || Math.abs(p - q) == 10);
     }
 
     /** [Bài 6]
@@ -118,7 +130,7 @@ public class Explanation {
         int rsnum = sc.nextInt();
         System.out.print("Input the ending number of the range: ");
         int renum = sc.nextInt();
-        int random_num = rsnum + (int)(Math.random() * ((renum - rsnum) + 1));
+        int random_num = rsnum + (int)(Math.random() * (Math.abs(renum - rsnum) + 1));
         System.out.println(random_num);
     }
 
@@ -140,10 +152,12 @@ public class Explanation {
         System.out.print("Input the number of second: ");
         double seconds = input.nextDouble();
 
+        // b1:
         double hourInYear = 24 * 365;
         double minuteInYear = 60 * 24 * 365;
         double secondInYear = 60 * 60 * 24 * 365;
 
+        //b2: lấy input
         int hour2Day = (int) (hours / 24);
         long hour2Year = (long) (hours / hourInYear);
 
