@@ -1,4 +1,4 @@
-package nguyentientho.techmasterndcjavacore14.buoi6.bai2;
+package nguyentientho.techmasterndcjavacore14.buoi6.btvn.bai0;
 
 import java.util.ArrayList;
 import java.util.List;

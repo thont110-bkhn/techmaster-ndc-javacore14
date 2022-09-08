@@ -1,4 +1,4 @@
-package nguyentientho.techmasterndcjavacore14.buoi6.bai2;
+package nguyentientho.techmasterndcjavacore14.buoi6.btvn.bai0;
 
 public class Newspaper extends Document {
     private int dayIssue;

@@ -2,7 +2,6 @@ package nguyentientho.techmasterndcjavacore14.buoi4;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.regex.PatternSyntaxException;
 
 public class RegexExercise {
     public static void main(String[] args) {
@@ -13,13 +12,13 @@ public class RegexExercise {
      * Viết chương trình Java để kiểm tra xem một chuỗi có chỉ chứa các ký tự là a-z, A-Z và 0-9.
      */
     public static void bai1() {
-        Pattern pattern = Pattern.compile("^[a-zA-Z0-9]+$", Pattern.CASE_INSENSITIVE);
-        Matcher matcher = pattern.matcher("ABCDEFabc!@#$%^^*_+3450");
+        Pattern pattern = Pattern.compile("^[\\\\w]+$", Pattern.CASE_INSENSITIVE);
+//        Matcher matcher = pattern.matcher("ABCDEFabcdef123450");
 //        Matcher matcher = pattern.matcher("SQL");
 //        Matcher matcher = pattern.matcher("Java");
 //        Matcher matcher = pattern.matcher("*&%@#!}{");
 //        Matcher matcher = pattern.matcher("*&%@#!}{");
-//        Matcher matcher = pattern.matcher("techmaster.vn");
+        Matcher matcher = pattern.matcher("techmaster.vn");
         System.out.println(matcher.matches());
     }
 
