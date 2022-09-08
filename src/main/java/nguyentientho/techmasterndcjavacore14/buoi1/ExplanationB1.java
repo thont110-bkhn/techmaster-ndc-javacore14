@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class ExplanationB1 {
 
     public static void main(String[] args) {
-        bai10();
     }
 
     /** [Bài 1]
@@ -16,10 +15,27 @@ public class ExplanationB1 {
      * b. Nếu thay phép toán tăng i++ (postfix increment operator) bằng ++i (prefix increment operator) thì giá trị
      * cuối cùng của i và n là bao nhiêu?
      */
-    public static void bai1() {}
+    public static void bai1() {
+        int i = 10;
+        int n = i++%5;
+        System.out.println("i = " + i);
+        System.out.println("n = " + n);
+
+        i = 10;
+        n = ++i%5;
+        System.out.println("i = " + i);
+        System.out.println("n = " + n);
+    }
 
     /** [Bài 2] Viết chương trình chuyển đổi từ độ F sang độ C. */
-    public static void bai2() {}
+    public static void bai2() {
+        System.out.println("~~~Fahrenheit to Celsius converter~~~");
+        System.out.print("Fahrenheit: ");
+        Scanner scan = new Scanner (System.in);
+        float fah = scan.nextFloat();
+        float cel = (fah - 32)*5/9;
+        System.out.println("Celsius: " + cel);
+    }
 
     /** [Bài 3]
      * Cho đoạn code sau:
@@ -27,7 +43,13 @@ public class ExplanationB1 {
      * System.out.println(d);
      * Giá trị của d được in ra là bao nhiêu ? Hãy sửa code để d có giá trị là 1.8
      */
-    public static void bai3() {}
+    public static void bai3() {
+        double d = 9 / 5;
+        System.out.println(d);
+
+        d= 9/5F;
+        System.out.println(d);
+    }
 
     /** [Bài 4]
      * Viết chương trình lấy 1 số nguyên bất kỳ trong khoảng từ 0 đến 1000 và tính tổng các chữ số của nó?

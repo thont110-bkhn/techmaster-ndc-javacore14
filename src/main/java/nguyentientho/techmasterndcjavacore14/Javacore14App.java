@@ -8,16 +8,16 @@ import java.util.Scanner;
 @SpringBootApplication
 public class Javacore14App {
 
-    public static void main(String[] args) {
-        String chuoi;
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Nhập Chuỗi : ");
-        chuoi= scanner.nextLine();
-        StringBuilder sb = new StringBuilder(chuoi);
-        sb.deleteCharAt(0);
-        System.out.println(sb.toString());
-    }
+//    public static void main0(String[] args) {
+//        String chuoi;
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.println("Nhập Chuỗi : ");
+//        chuoi= scanner.nextLine();
+//        StringBuilder sb = new StringBuilder(chuoi);
+//        sb.deleteCharAt(0);
+//        System.out.println(sb.toString());
+//    }
 
     public static void main0(String[] args) {
         for (var i = 1; i <= 100; i++) {
@@ -156,5 +156,11 @@ public class Javacore14App {
                 System.out.println(string.charAt(i)+"  ");
             }
         }
+    }
+
+    public static void main(String[] args) {
+        String s1 = "Rick";
+        System.out.println(s1);
+//        System.out.println(s7.toString());
     }
 }

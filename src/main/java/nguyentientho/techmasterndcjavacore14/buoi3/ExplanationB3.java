@@ -1,8 +1,34 @@
 package nguyentientho.techmasterndcjavacore14.buoi3;
 
+import java.util.Scanner;
+
 public class ExplanationB3 {
     public static void main(String[] args) {
-        bai5();
+//        bai4();
+        System.out.println("/*------------ex5---------*/");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Mời bạn nhập vào chuỗi :");
+        String str = scanner.nextLine();
+        String reverse=" ",reversal=" ";
+        int space=0;
+        for(int i =0;i< str.length();i++){
+            reverse =  str.charAt(i)+reverse; //
+        }
+
+        for (int i =0 ;i<reverse.length();i++){
+            if(reverse.charAt(i)==' ')
+            {
+                String k = reverse.substring(space,i);
+                String kl="";
+                for (int j= 0; j < k.length();j++){
+                    kl = k.charAt(j)+ kl;
+                }
+                reversal = reversal+kl;
+                reversal =  reversal+" ";
+                space = i+1;
+            }
+        }
+        System.out.println("chuỗi sau khi đảo là:"+reversal.substring(1));
     }
 
     /** Bài 1

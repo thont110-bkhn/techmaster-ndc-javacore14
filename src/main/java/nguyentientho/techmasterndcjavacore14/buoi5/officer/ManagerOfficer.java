@@ -22,4 +22,6 @@ public class ManagerOfficer {
     public void showListInforOfficer() {
         this.officers.forEach(o -> System.out.println(o.toString()));
     }
+
+    public void exitApplication() {};
 }

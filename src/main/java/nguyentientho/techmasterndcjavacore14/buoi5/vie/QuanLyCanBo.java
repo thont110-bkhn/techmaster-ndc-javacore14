@@ -1,18 +1,19 @@
-package nguyentientho.techmasterndcjavacore14.buoi5.mana;
-
-import java.util.Arrays;
+package nguyentientho.techmasterndcjavacore14.buoi5.vie;
 
 public class QuanLyCanBo {
     private CanBo[] officersArr;
+    private int coutCanBo = 0;
 
     public QuanLyCanBo() {
         this.officersArr = new CanBo[100];
     }
 
     public void themCanBo(CanBo canBo) {
-        for (int i = 0; i < officersArr.length; i++) {
+        for (int i = 0; i <= coutCanBo; i++) {
             if (officersArr[i] == null) {
                 officersArr[i] = canBo;
+                coutCanBo++;
+                break;
             }
         }
     }
@@ -25,6 +26,11 @@ public class QuanLyCanBo {
     }
 
     public void hienThiDanhSachCanBo() {
-        System.out.println(Arrays.toString(officersArr));
+        for (CanBo canBo : officersArr) {
+            if (canBo != null) {
+                System.out.println(canBo.toString());
+            }
+        }
+        //        System.out.println(Arrays.toString(officersArr));
     }
 }

@@ -1,4 +1,4 @@
-package nguyentientho.techmasterndcjavacore14.buoi5.mana;
+package nguyentientho.techmasterndcjavacore14.buoi5.vie;
 
 public class KySu extends CanBo {
     private String chuyenNganh;
