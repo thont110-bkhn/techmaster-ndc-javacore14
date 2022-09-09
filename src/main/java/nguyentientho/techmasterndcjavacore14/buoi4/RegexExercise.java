@@ -12,14 +12,19 @@ public class RegexExercise {
      * Viết chương trình Java để kiểm tra xem một chuỗi có chỉ chứa các ký tự là a-z, A-Z và 0-9.
      */
     public static void bai1() {
-        Pattern pattern = Pattern.compile("^[\\\\w]+$", Pattern.CASE_INSENSITIVE);
-//        Matcher matcher = pattern.matcher("ABCDEFabcdef123450");
-//        Matcher matcher = pattern.matcher("SQL");
-//        Matcher matcher = pattern.matcher("Java");
-//        Matcher matcher = pattern.matcher("*&%@#!}{");
-//        Matcher matcher = pattern.matcher("*&%@#!}{");
-        Matcher matcher = pattern.matcher("techmaster.vn");
-        System.out.println(matcher.matches());
+        Pattern pattern = Pattern.compile("^[\\w]+$", Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher("ABCDEFabcdef123450");
+        Matcher matcher2 = pattern.matcher("SQL");
+        Matcher matcher3 = pattern.matcher("Java");
+        Matcher matcher4 = pattern.matcher("*&%@#!}{");
+        Matcher matcher5 = pattern.matcher("*&%@#!}{");
+        Matcher matcher6 = pattern.matcher("techmaster.vn");
+        System.out.println("1 - " + matcher.matches());
+        System.out.println("2 - " + matcher2.matches());
+        System.out.println("3 - " + matcher3.matches());
+        System.out.println("4 - " + matcher4.matches());
+        System.out.println("5 - " + matcher5.matches());
+        System.out.println("6 - " + matcher6.matches());
     }
 
     /** bai 2
