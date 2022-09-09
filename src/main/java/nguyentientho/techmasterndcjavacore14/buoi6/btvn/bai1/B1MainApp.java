@@ -1,14 +1,11 @@
 package nguyentientho.techmasterndcjavacore14.buoi6.btvn.bai1;
 
-import nguyentientho.techmasterndcjavacore14.buoi6.btvn.bai0.Book;
-import nguyentientho.techmasterndcjavacore14.buoi6.btvn.bai0.Document;
-
-import java.awt.*;
-import java.util.Arrays;
-import java.util.Scanner;
+import java.awt.List;
+import java.util.*;
 
 public class B1MainApp {
-    public static void main(String[] args) {
+    public static void main0(String[] args) {
+        List list = new List(); //entry
         Scanner scanner = new Scanner(System.in);
         TheMuon theMuon = new TheMuon();
         while (true) {
@@ -76,5 +73,29 @@ public class B1MainApp {
                     continue;
             }
         }
+
+    }
+
+    public static void main(String[] args) {
+        java.util.Set<String> stringList = new HashSet<String>();
+        stringList.add("red");
+        stringList.add("green");
+        stringList.add("blue");
+        stringList.add("black");
+        stringList.add("white");
+        stringList.add("red");
+        System.out.println(stringList);
+
+        java.util.List<String> list2 = new ArrayList<>();
+        list2.add("red");
+        list2.add("green");
+        list2.add("blue");
+        list2.add("black");
+        list2.add("white");
+        list2.add("red");
+        System.out.println(list2);
+
+        Collections.reverse(list2);
+        System.out.println(list2);
     }
 }

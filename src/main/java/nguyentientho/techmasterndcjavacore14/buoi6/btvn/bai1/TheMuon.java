@@ -5,30 +5,31 @@ import java.util.List;
 
 public class TheMuon {
 
-    private List<The> theL;
+    private List<The> theList;
 
     public TheMuon() {
-        this.theL = new ArrayList<>();
+        this.theList = new ArrayList<>();
     }
 
     public void themThe(The the) {
-        this.theL.add(the);
+        this.theList.add(the);
     }
 
     public boolean xoaThe(String maThe) {
 //        The the = this.theL.stream().filter(t -> t.getMaThe().equals(id)).findFirst().orElse(null);
 
-//        theL.forEach(t -> {
+//        theList.forEach(t -> {
 //            t.getMaThe().equals(maThe);
-//            theL.remove(t);
+//            theList.remove(t);
 //            System.out.println("delete done the = " + t);
 //
 //        });
 //        return true;
-        for (int i = 0; i < theL.size(); i++) {
-            The the = theL.get(i);
+
+        for (int i = 0; i < theList.size(); i++) {
+            The the = theList.get(i);
             if (the.getMaThe().equals(maThe)) {
-                theL.remove(the);
+                theList.remove(the);
                 return true;
             }
         }
@@ -36,8 +37,9 @@ public class TheMuon {
     }
 
     public void hienThi() {
-        for (The the : theL) {
-            System.out.println(the);
-        }
+//        for (The the : theL) {
+//            System.out.println(the);
+//        }
+        System.out.println(theList);
     }
 }
