@@ -1,30 +1,24 @@
 package nguyentientho.techmasterndcjavacore14.buoi8.kiemtra1;
 
 public class Bai1 {
-    /**
-     * Viết một phương thức Java để kiểm tra xem tất cả các ký tự trong một chuỗi đã cho có phải là nguyên âm
-     * (u, e, o, a, i) hay không. Trả về true nếu mỗi ký tự của chuỗi là một nguyên âm, nếu không thì trả về false
-     * AIEEE -> true
-     * IAO -> true
-     * Java -> false
-     * Python -> false
+    /** Bài 1:
+     * Viết một phương thức Java để kiểm tra xem mọi chữ số của một số nguyên dương đã cho có phải là số chẵn hay không.
+     * Trả về true nếu mọi chữ số là chẵn, ngược lại là false.
+     * Ví dụ:
+     * (8642)->true
+     * (123)->false
+     * (200)->true
      */
     public static void main(String[] args) {
-        System.out.println(vowelCheck("AIEEE")
-                + "\n"
-                + vowelCheck("IAOOOAAIIIUUEEEIII")
-                + "\n"
-                + vowelCheck("Javaaa"));
-        char a = 65;
-        System.out.println(a);
+        System.out.println(checkEvenDigit(24681428));
     }
 
-    public static boolean vowelCheck(String input) {
-        String vowels = "aeiou";
-        String template = input.toLowerCase();
-        for (int i = 0; i < template.length(); i++) {
-            if (vowels.indexOf(template.charAt(i)) == -1)
+    public static boolean checkEvenDigit(int n){
+        while(n != 0){
+            if((n % 10) % 2 != 0){
                 return false;
+            }
+            n /= 10;
         }
         return true;
     }
