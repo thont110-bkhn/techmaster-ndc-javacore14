@@ -1,4 +1,4 @@
-package nguyentientho.techmasterndcjavacore14.buoi5.vie;
+package nguyentientho.techmasterndcjavacore14.buoi5.canbo;
 
 public class CongNhan extends CanBo {
     private int capBac;
