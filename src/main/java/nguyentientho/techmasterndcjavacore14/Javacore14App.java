@@ -1,5 +1,6 @@
 package nguyentientho.techmasterndcjavacore14;
 
+import nguyentientho.techmasterndcjavacore14.buoi10.MethodInfo;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.Arrays;
@@ -35,6 +36,7 @@ public class Javacore14App {
         }
     }
 
+    @MethodInfo(date = "", comments = "")
     public static void main1(String[] args) {
         for (var i = 1; i <= 100; i++) {
             if ((i % 3 == 0) && (i % 5 != 0)) { // nếu chỉ chia hết cho 3 nhưng không chia hết cho 5

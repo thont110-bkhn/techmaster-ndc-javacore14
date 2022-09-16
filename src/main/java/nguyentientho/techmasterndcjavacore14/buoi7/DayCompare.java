@@ -2,6 +2,9 @@ package nguyentientho.techmasterndcjavacore14.buoi7;
 
 import java.util.Comparator;
 
+/**
+ * <h1> Đây là 1 lớp có phần javadoc để show <h1/>
+ */
 public class DayCompare implements Comparator<Day> {
     @Override
     public int compare(Day o1, Day o2) {
