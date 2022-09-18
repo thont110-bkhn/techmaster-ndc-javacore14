@@ -81,7 +81,6 @@ class Explanation {
                 }
             }
         }
-
         System.out.println("Common element : "+(set));     //OUTPUT : [THREE, FOUR, FIVE]
     }
 

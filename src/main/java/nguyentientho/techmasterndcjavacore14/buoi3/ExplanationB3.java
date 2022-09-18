@@ -44,7 +44,6 @@ public class ExplanationB3 {
 //            newstring += str1.substring(i, i + 1) + str1.substring(i, i + 1);
         newstring+= str1.charAt(i);
         newstring+= str1.charAt(i);
-
         }
         System.out.println("The given string is: " + str1);
         System.out.println("The new string is: " + newstring);
