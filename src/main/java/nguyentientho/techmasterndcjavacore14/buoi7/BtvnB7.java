@@ -2,9 +2,10 @@ package nguyentientho.techmasterndcjavacore14.buoi7;
 
 import java.util.*;
 
-public class PracticeB7 {
+public class BtvnB7 {
     public static void main(String[] args) {
-        bai1();
+//        bai1();
+        bai2();
     }
 
     /**
@@ -99,5 +100,34 @@ public class PracticeB7 {
             String replace = "replace";
             colorList.set(1, replace);
         }
+    }
+
+    /** Hashset
+     * Viết 1 chương trình java để:
+     * 1) Lặp và in ra tất cả các phần tử của hashset
+     * 2) Tính tổng số phần tử của hashset
+     * 3) Xóa tất cả các phần tử trong hashset
+     * 4) check 1 hashset có phải là hashset rỗng hay không
+     * 5) Nhân bản hashset đang có
+     * 6) Chuyển đổi 1 hashset thành 1 mảng
+     * 7) Chuyển đổi 1 hashset thành 1 treeset
+     * 8) Chuyển đổi 1 hashset thành 1 arraylist
+     * 9) So sánh các phần tử của hashset đầu tiên với hashset thứ 2
+     * 10) so sánh 2 hashset và giữ lại các phần tử giống nhau giữa 2 hashset
+     */
+    public static void bai2() {
+//        Set<Day> numSet = new HashSet<>();
+        TreeSet<Day> numSet = new TreeSet<>(new DayCompare());
+//        Set<Day> numSet = new LinkedHashSet<>();
+        numSet.add(new Day(2));
+        numSet.add(new Day(3));
+        numSet.add(new Day(5));
+        numSet.add(new Day(4));
+        numSet.add(new Day(1));
+        System.out.println(numSet.toString());
+//        Iterator iterator = numSet.iterator();
+//        while (iterator.hasNext()) {
+//            System.out.println(iterator.next() + " ");
+//        }
     }
 }
