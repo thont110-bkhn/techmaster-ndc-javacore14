@@ -1,4 +1,6 @@
-package nguyentientho.techmasterndcjavacore14.buoi8.kiemtra1;
+package nguyentientho.techmasterndcjavacore14.buoi8.so1;
+
+import java.util.regex.Pattern;
 
 public class Bai2 {
     /** Bài 2:
@@ -37,5 +39,10 @@ public class Bai2 {
             } else return false;
         }
         return result;
+    }
+
+    public static boolean vowelCheck3(String input){
+        Pattern pattern = Pattern.compile("[ueoaiUEOAI]*");
+        return input.matches(String.valueOf(pattern));
     }
 }

@@ -1,6 +1,6 @@
 package nguyentientho.techmasterndcjavacore14.buoi5.canbo;
 
-public class CanBo {
+public class CanBo implements ViecLam {
     protected String ten;
     protected int tuoi;
     protected String gioiTinh;
@@ -43,5 +43,11 @@ public class CanBo {
 
     public void setDiaChi(String diaChi) {
         this.diaChi = diaChi;
+    }
+
+
+    @Override
+    public void work(String input) {
+        // logic ham work
     }
 }

@@ -161,8 +161,26 @@ public class Javacore14App {
     }
 
     public static void main(String[] args) {
-        String s1 = "Rick";
-        System.out.println(s1);
-//        System.out.println(s7.toString());
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Nhap chuoi can kiem tra : ");
+        String str = sc.nextLine();
+        char[] arrString = new char[]{'u','e','o','a','i'};
+        boolean exist=true;
+        char[] arrChar = str.toCharArray();
+        int count =0;
+        for (char s : arrString) {
+            for (char c1 : arrChar) {
+                if(c1==s){
+                    count++;
+                    break;
+                }
+            }
+        }
+        if(count==arrChar.length){
+            System.out.println(true);
+        }
+        else {
+            System.out.println(false);
+        }
     }
 }

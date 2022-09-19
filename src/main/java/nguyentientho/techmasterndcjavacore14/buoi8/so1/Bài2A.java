@@ -1,4 +1,4 @@
-package nguyentientho.techmasterndcjavacore14.buoi8.kiemtra1;
+package nguyentientho.techmasterndcjavacore14.buoi8.so1;
 
 import java.util.Arrays;
 import java.util.HashMap;

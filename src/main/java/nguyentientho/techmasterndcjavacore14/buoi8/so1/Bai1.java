@@ -1,4 +1,6 @@
-package nguyentientho.techmasterndcjavacore14.buoi8.kiemtra1;
+package nguyentientho.techmasterndcjavacore14.buoi8.so1;
+
+import java.util.regex.Pattern;
 
 public class Bai1 {
     /** Bài 1:
@@ -10,7 +12,7 @@ public class Bai1 {
      * (200)->true
      */
     public static void main(String[] args) {
-        System.out.println(checkEvenDigit(24681428));
+        System.out.println(checkDigitRegex(24680428));
     }
 
     public static boolean checkEvenDigit(int n){
@@ -21,5 +23,11 @@ public class Bai1 {
             n /= 10;
         }
         return true;
+    }
+
+    public static boolean checkDigitRegex(int input){
+        Pattern pattern = Pattern.compile("[02468]*");
+        String str = String.valueOf(input);
+        return str.matches(String.valueOf(pattern));
     }
 }

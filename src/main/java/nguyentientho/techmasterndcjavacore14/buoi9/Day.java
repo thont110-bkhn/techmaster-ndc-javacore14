@@ -1,4 +1,4 @@
-package nguyentientho.techmasterndcjavacore14.buoi7;
+package nguyentientho.techmasterndcjavacore14.buoi9;
 
 public class Day {
     private int date;
