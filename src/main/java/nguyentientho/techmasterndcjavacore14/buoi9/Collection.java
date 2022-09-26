@@ -19,38 +19,42 @@ public class Collection {
      */
     public static void bai2() {
 //        Set<Day> numSet = new HashSet<>();
-        TreeSet<Day> h_set = new TreeSet<>(new DayCompare());
+        TreeSet<Day> tree_set = new TreeSet<>(new DayCompare());
 //        Set<Day> numSet = new LinkedHashSet<>();
-        h_set.add(new Day(2));
-        h_set.add(new Day(3));
-        h_set.add(new Day(5));
-        h_set.add(new Day(4));
-        h_set.add(new Day(1));
-        System.out.println(h_set.toString());
+        tree_set.add(new Day(2));
+        tree_set.add(new Day(3));
+        tree_set.add(new Day(5));
+        tree_set.add(new Day(4));
+        tree_set.add(new Day(1));
+        System.out.println(tree_set.toString());
 //        Iterator iterator = numSet.iterator();
 //        while (iterator.hasNext()) {
 //            System.out.println(iterator.next() + " ");
 //        }
-        h_set.size();
-        h_set.removeAll(h_set);
-        h_set.isEmpty();
-
-        HashSet<String> new_h_set = new HashSet <String> ();
-        new_h_set = (HashSet)h_set.clone();
-        System.out.println("Cloned Hash Set: " + new_h_set);
-
-        String[] new_array = new String[h_set.size()];
-        h_set.toArray(new_array);
-
-        Set<String> tree_set = new TreeSet<String>(new_h_set);
-        List<String> list = new ArrayList<String>(new_h_set);
+//        h_set.size();
+//        h_set.removeAll(h_set);
+//        h_set.isEmpty();
+//
+//        HashSet<String> new_h_set = new HashSet <String> ();
+//        new_h_set = (HashSet)h_set.clone();
+//        System.out.println("Cloned Hash Set: " + new_h_set);
+//
+//        String[] new_array = new String[h_set.size()];
+//        h_set.toArray(new_array);
+//
+//        Set<String> tree_set = new TreeSet<String>(new_h_set);
+//        List<String> list = new ArrayList<String>(new_h_set);
 
         //comparison output in hash set
         HashSet<String>result_set = new HashSet<String>();
-//        for (String element : h_set){
-//            System.out.println(tree_set.contains(element) ? "Yes" : "No");
-//        }
+        for (Day e : tree_set){
+            System.out.println(tree_set.contains(e) ? "Yes" : "No");
+        }
 
 //        h_set1.retainAll(h_set2);
+    }
+
+    public static void main(String[] args) {
+        bai2();
     }
 }
