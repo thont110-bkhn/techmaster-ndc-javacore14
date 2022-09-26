@@ -1,7 +1,13 @@
 package nguyentientho.techmasterndcjavacore14.buoi10.oop;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 public class Main {
     public static void main0(String[] args) {
+        Son son;
 //        Dad dad = new Son();
         Dad dad = new Daughter();
 //        Dad dad = (Dad) new GrandFather();
@@ -10,11 +16,20 @@ public class Main {
         daughter.eat();
     }
 
-    public static void main(String[] args) {
-        Dad dad = new Daughter(); // Upcasting
-        Daughter daughter = (Daughter) dad; // Downcasting
+//    static void something() {}
 
-//        daughter.walk("Bố");
-        daughter.walk("");
+    public static void main(String[] args) {
+        List<String> strings = new ArrayList<String>();
+        strings.add("hung");
+        strings.add("tien");
+        strings.add("nam");
+        strings.forEach(e -> {
+            System.out.println(e);
+            int a = 5;
+            double b = a * 2;
+        });
+
+        Stream<String> stringStream = strings.stream();
     }
+
 }

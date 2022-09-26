@@ -1,6 +1,6 @@
 package nguyentientho.techmasterndcjavacore14.buoi10.oop;
 
-public class Son extends Dad implements Runable {
+public class Son extends Dad {
 
     @Override
     public void walk(String x) {

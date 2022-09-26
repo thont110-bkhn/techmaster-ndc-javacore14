@@ -6,8 +6,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Data
-public class Address extends Employee  {
-    String street;
-    String city;
-    int zipcode;
+public class Properties extends Employee {
+    String age;
+    String salary;
 }
