@@ -1,9 +1,8 @@
 package nguyentientho.techmasterndcjavacore14;
 
-import nguyentientho.techmasterndcjavacore14.buoi10.MethodInfo;
+import nguyentientho.techmasterndcjavacore14.research10.MethodInfo;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 @SpringBootApplication
