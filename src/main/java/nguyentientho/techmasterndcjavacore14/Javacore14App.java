@@ -9,17 +9,6 @@ import java.util.Scanner;
 @SpringBootApplication
 public class Javacore14App {
 
-//    public static void main0(String[] args) {
-//        String chuoi;
-//        Scanner scanner = new Scanner(System.in);
-//
-//        System.out.println("Nhập Chuỗi : ");
-//        chuoi= scanner.nextLine();
-//        StringBuilder sb = new StringBuilder(chuoi);
-//        sb.deleteCharAt(0);
-//        System.out.println(sb.toString());
-//    }
-
     public static void main0(String[] args) {
         for (var i = 1; i <= 100; i++) {
             if (i % 3 == 0) { // nếu i chia hết cho 3
